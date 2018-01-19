@@ -7,13 +7,13 @@ import javax.swing.JOptionPane;
 
 public class Dialogos {
     // Mensaje de acción simple
-    public static void mensajesimple() {
-        JOptionPane.showMessageDialog(null, "Operación realizada correctamente");
+    public static void mensajesimple(String cadena) {
+        JOptionPane.showMessageDialog(null, cadena);
     }
     //Mensaje de confirmacion que devuelve un int, en el que 0= si y 1=no
-    //@return
-    public static int mensajeconfirm() {
-        return JOptionPane.showConfirmDialog(null, "¿Esta seguro?","Alerta",JOptionPane.YES_NO_OPTION);
+    //@return int
+    public static int mensajeconfirm(String cadena) {
+        return JOptionPane.showConfirmDialog(null, cadena,"Alerta",JOptionPane.YES_NO_OPTION);
     }
 
 }
