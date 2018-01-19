@@ -20,7 +20,7 @@ public class Dialogos {
     /**
      * Mensaje de confirmacion que devuelve un int, en el que 0= si y 1=no
      * @param cadenaTexto Variable que recibe un mensaje de tipo String y lo implementa al JOptionPane
-     * @return 
+     * @return Un entero con los valores 0 o 1
      */
     public static int mensajeconfirm(String cadenaTexto) {
         return JOptionPane.showConfirmDialog(null, cadenaTexto, null, JOptionPane.YES_NO_OPTION);
